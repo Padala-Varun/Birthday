@@ -1,4 +1,4 @@
-// Function to create and animate confetti
+
 function createConfetti() {
   const confetti = document.getElementById("confetti");
   const colors = ["#ff4081", "#ffeb3b", "#4caf50", "#00bcd4", "#9c27b0"];
@@ -22,7 +22,7 @@ function createConfetti() {
   }
 }
 
-// Keyframes for confetti animation
+
 const style = document.createElement("style");
 style.innerHTML = `
     @keyframes confetti-animation {
@@ -32,5 +32,5 @@ style.innerHTML = `
 `;
 document.head.appendChild(style);
 
-// Trigger confetti creation
+
 createConfetti();
