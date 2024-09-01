@@ -1,0 +1,119 @@
+/* Basic reset */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: "Arial", sans-serif;
+}
+
+/* Center the content */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: #f3f4f6;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Profile image styling */
+.profile-wrapper {
+  margin-bottom: 20px;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 150px;
+  height: 150px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.profile-img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+}
+
+/* Message styling */
+.message {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#birthday-message {
+  font-size: 2em;
+  color: #ff4081;
+  animation: bounce 1s infinite;
+}
+
+#bold {
+  font-size: 3em;
+}
+#sub-message {
+  font-size: 1.5em;
+  color: #555;
+}
+
+/* Cake styling */
+.cake-wrapper {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.cake {
+  width: 200px;
+  animation: spin 5s linear infinite;
+}
+
+/* Confetti styling */
+.confetti {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  }
+  50% {
+    transform: scale(1.1);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  }
+}
