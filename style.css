@@ -1,4 +1,4 @@
-/* Basic reset */
+
 body,
 html {
   margin: 0;
@@ -8,7 +8,7 @@ html {
   font-family: "Arial", sans-serif;
 }
 
-/* Center the content */
+
 .container {
   display: flex;
   flex-direction: column;
@@ -20,7 +20,7 @@ html {
   overflow: hidden;
 }
 
-/* Profile image styling */
+
 .profile-wrapper {
   margin-bottom: 20px;
   border-radius: 50%;
@@ -37,7 +37,7 @@ html {
   animation: pulse 2s infinite;
 }
 
-/* Message styling */
+
 .message {
   text-align: center;
   margin-bottom: 20px;
@@ -57,7 +57,7 @@ html {
   color: #555;
 }
 
-/* Cake styling */
+
 .cake-wrapper {
   position: relative;
   margin-bottom: 20px;
@@ -68,7 +68,6 @@ html {
   animation: spin 5s linear infinite;
 }
 
-/* Confetti styling */
 .confetti {
   position: absolute;
   top: 0;
